@@ -26,15 +26,23 @@
 package upnp
 
 import (
+	"crypto/rand"
 	"errors"
+	"math/big"
 	"net"
 	"net/url"
 	"time"
 
-	"github.com/NebulousLabs/Sia/crypto"
 	"github.com/huin/goupnp"
 	"github.com/huin/goupnp/dcps/internetgateway1"
 )
+
+// RandIntn returns a non-negative random integer in the range [0,n). It panics
+// if n <= 0.
+func RandIntn(n int) (int, error) {
+	r, err := rand.Int(rand.Reader, big.NewInt(int64(n)))
+	return int(r.Int64()), err
+}
 
 // An IGD provides an interface to the most commonly used functions of an
 // Internet Gateway Device: discovering the external IP, and forwarding ports.
@@ -124,7 +132,7 @@ func (d *IGD) getInternalIP() (string, error) {
 // subnet as the user?
 func Discover() (*IGD, error) {
 	maxTries := 3
-	sleepMs, _ := crypto.RandIntn(5000)
+	sleepMs, _ := RandIntn(5000)
 	for try := 0; try < maxTries; try++ {
 		time.Sleep(time.Millisecond * time.Duration(sleepMs))
 		pppclients, _, _ := internetgateway1.NewWANPPPConnection1Clients()
