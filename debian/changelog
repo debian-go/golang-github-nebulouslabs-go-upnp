@@ -1,5 +1,5 @@
-golang-github-nebulouslabs-go-upnp (0.0~git20160920.0.73e8530-1) UNRELEASED; urgency=medium
+golang-github-nebulouslabs-go-upnp (0.0~git20160920.0.73e8530-1) unstable; urgency=medium
 
-  * Initial release (Closes: TODO)
+  * Initial release (Closes: #852107)
 
  -- Free Ekanayaka <freee@debian.org>  Sun, 30 Oct 2016 14:37:38 +0000

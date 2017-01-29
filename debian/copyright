@@ -3,15 +3,15 @@ Upstream-Name: go-upnp
 Source: https://github.com/nebulouslabs/go-upnp
 
 Files: *
-Copyright: 2015 Nebulous
-License: MIT
+Copyright: 2015 Nebulous Inc.
+License: Expat
 
 Files: debian/*
-Copyright: 2016 Free Ekanayaka <freee@debian.org>
-License: MIT
+Copyright: 2017 Free Ekanayaka <freee@debian.org>
+License: Expat
 Comment: Debian packaging is licensed under the same terms as upstream
 
-License: MIT
+License: Expat
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
  in the Software without restriction, including without limitation the rights

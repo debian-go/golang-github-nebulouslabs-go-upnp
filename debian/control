@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 9),
                dh-golang,
                golang-go,
                golang-golang-x-net-dev,
-               goupnp
+	       golang-github-huin-goupnp-dev
 Standards-Version: 3.9.8
 Homepage: https://github.com/nebulouslabs/go-upnp
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-nebulouslabs-go-upnp.git
@@ -20,7 +20,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          golang-go,
          golang-golang-x-net-dev
-Description: An opinionated interface to your local Internet Gateway Device.
+Description: Opinionated interface to Internet Gateway Devices
  The upnp package upnp provides a simple and opinionated interface to
  UPnP-enabled routers, allowing users to forward ports and discover their
  external IP address.
