@@ -7,7 +7,9 @@ Build-Depends: debhelper (>= 9),
                dh-golang,
                golang-go,
                golang-golang-x-net-dev,
-	       golang-github-huin-goupnp-dev
+	       golang-github-huin-goupnp-dev,
+	       golang-github-nebulouslabs-fastrand-dev,
+               golang-github-dchest-blake2b-dev
 Standards-Version: 4.1.1
 Homepage: https://github.com/nebulouslabs/go-upnp
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-nebulouslabs-go-upnp.git
