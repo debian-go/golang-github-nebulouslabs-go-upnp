@@ -1,3 +1,11 @@
+golang-github-nebulouslabs-go-upnp (0.0~git20171003.0.1be4557-1) unstable; urgency=medium
+
+  * New upstream version 0.0~git20171003.0.1be4557
+  * Change priority to optional
+  * Bump standards-version to 4.1.1
+
+ -- Free Ekanayaka <freee@debian.org>  Tue, 31 Oct 2017 22:51:34 +0000
+
 golang-github-nebulouslabs-go-upnp (0.0~git20160920.0.73e8530-1) unstable; urgency=medium
 
   * Initial release (Closes: #852107)
